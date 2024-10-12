@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Freedium Redirector",
+  "version": "1.0",
+  "description": "Removes Medium paywall",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon48.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "prepend-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M"
+      },
+      "description": "Prepend URL to current tab"
+    }
+  },
+  "permissions": ["activeTab"]
+}
